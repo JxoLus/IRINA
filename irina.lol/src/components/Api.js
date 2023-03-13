@@ -3,9 +3,11 @@ import Main from "../routes/Main";
 
 function Api() {
   const API_KEY = "RGAPI-8d2bef28-2435-4a32-b348-2765cdf0aa14";
+  console.log("in api");
 
   function searchForSummoner(event) {
-    var APICallString = `https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/${Api.summonerName}?api_key=${API_KEY}`;
+    console.log("in f");
+    var APICallString = `kr.api.riotgames.com`;
     axios
       .get(APICallString)
       .then((res) => {
