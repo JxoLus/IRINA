@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { FaGoogle } from "react-icons/fa";
 import { useState } from "react";
@@ -26,6 +25,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/new.png" />
       </Head>
+      <div className={styles.title}>
+        <p>IRINA</p>
+      </div>
       <div className={styles.searchBar}>
         <FaGoogle size="36" color="white" />
         <input
